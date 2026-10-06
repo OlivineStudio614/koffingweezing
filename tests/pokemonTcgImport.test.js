@@ -23,6 +23,31 @@ test('transformPokemonTCGCard maps API shape to our schema', () => {
   assert.equal(card.depicted_only, false);
 });
 
+function makeApiCard(name, overrides = {}) {
+  return {
+    id: 'gym2-48',
+    name,
+    number: '48',
+    rarity: 'Uncommon',
+    set: { id: 'gym2', name: 'Gym Challenge', releaseDate: '2000/10/16' },
+    images: { small: 'https://images.pokemontcg.io/gym2/48.png', large: 'https://images.pokemontcg.io/gym2/48_hires.png' },
+    ...overrides,
+  };
+}
+
+test('transformPokemonTCGCard normalizes real-world card names to the schema species enum', () => {
+  assert.equal(transformPokemonTCGCard(makeApiCard("Koga's Koffing")).species, 'koffing');
+  assert.equal(transformPokemonTCGCard(makeApiCard('Dark Weezing')).species, 'weezing');
+  assert.equal(transformPokemonTCGCard(makeApiCard("Team Rocket's Weezing")).species, 'weezing');
+  assert.equal(transformPokemonTCGCard(makeApiCard('Galarian Weezing')).species, 'galarian-weezing');
+});
+
+test("transformPokemonTCGCard preserves the real card_name even when species is normalized", () => {
+  const card = transformPokemonTCGCard(makeApiCard("Koga's Koffing"));
+  assert.equal(card.card_name, "Koga's Koffing");
+  assert.equal(card.id, 'gym2-koffing-48-en');
+});
+
 test('mergeCards keeps existing entries and appends only new ids', () => {
   const existing = [{ id: 'base1-koffing-48-en', owned: true, owned_date: '2026-09-01' }];
   const incoming = [{ id: 'base1-koffing-48-en', owned: false, owned_date: null }, { id: 'jungle-weezing-45-en', owned: false, owned_date: null }];
