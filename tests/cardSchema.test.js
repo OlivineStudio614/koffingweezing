@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { validateCard, validateCardList } from '../js/cardSchema.js';
 
 const validCard = {
@@ -52,4 +53,11 @@ test('validateCardList flags duplicate ids and collects per-card errors', () => 
   assert.equal(valid, false);
   assert.ok(messages.some(m => m.includes('Duplicate id')));
   assert.ok(messages.some(m => m.includes('Invalid card "x"')));
+});
+
+test('the real data/cards.json passes schema validation', () => {
+  const dataPath = new URL('../data/cards.json', import.meta.url);
+  const cards = JSON.parse(readFileSync(dataPath, 'utf8'));
+  const { valid } = validateCardList(cards);
+  assert.equal(valid, true);
 });
