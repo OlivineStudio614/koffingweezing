@@ -3,6 +3,14 @@ export const LANGUAGE_DISPLAY_NAMES = {
   jp: 'Japanese',
   fr: 'French',
   de: 'German',
+  es: 'Spanish',
+  it: 'Italian',
+  pt: 'Portuguese',
+  'zh-cn': 'Chinese (Simplified)',
+  'zh-tw': 'Chinese (Traditional)',
+  ko: 'Korean',
+  id: 'Indonesian',
+  th: 'Thai',
 };
 
 export function sortByReleaseDate(cards) {
