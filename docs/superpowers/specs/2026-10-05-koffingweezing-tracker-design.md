@@ -88,8 +88,9 @@ Single file: `data/cards.json` — an array of card objects:
 - Owned cards render normally with their image and `owned_date`; unowned
   cards render grayed-out/silhouetted.
 - A "next up" marker highlights the earliest unowned card in chronological
-  order — the natural next target, since the user already owns the
-  earliest-released card (Base Set 1st edition).
+  order. As the dataset has grown to include vintage and non-English
+  printings, "earliest" may not always mean "easiest to acquire" — the
+  marker reflects release-date order, not acquisition difficulty.
 - Basic filters (language, species, edition) are reasonable but secondary —
   not required for v1.
 
