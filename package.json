@@ -1,0 +1,9 @@
+{
+  "name": "koffingweezing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/",
+    "validate": "node scripts/validate-cards.js"
+  }
+}
