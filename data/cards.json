@@ -4246,5 +4246,41 @@
     "source_note": "Official Korean Pokémon card database image CDN (set \"sv10\" = 로켓단의 영광 / Glory of Team Rocket, number 070/098 U, HP130, illus. matazo, attack 일제폭발). Korean release date June 20, 2025 confirmed via Korean retailer/community coverage (namu.wiki \"로켓단의 영광\"). Card name, number, and artwork directly viewed at the image_url above.",
     "owned": false,
     "owned_date": null
+  },
+  {
+    "id": "151c-koffing-109-zh-cn",
+    "species": "koffing",
+    "card_name": "瓦斯弹",
+    "card_name_en": "Koffing",
+    "set_name": "收集啦151",
+    "set_code": "151c",
+    "card_number": "109",
+    "release_date": "2025-01-17",
+    "language": "zh-cn",
+    "edition": null,
+    "rarity": "Common",
+    "depicted_only": false,
+    "image_url": "https://bills-archive.nyc3.cdn.digitaloceanspaces.com/cn_cards/151c/151c-p109_koffing.webp",
+    "source_note": "神奇宝贝百科 (52poke wiki) species TCG page \"瓦斯弹（SV2a）\" (https://wiki.52poke.com/wiki/%E7%93%A6%E6%96%AF%E5%BC%B9%EF%BC%88SV2a%EF%BC%89), raw table parsed directly to separate its side-by-side 简体中文版 (Simplified, mainland China) and 繁体中文版 (Traditional, Taiwan) columns: the Simplified column gives set \"收集啦151\" (distinct mainland name/numbering from Taiwan's \"宝可梦卡牌151\"), release date 2025-01-17, rarity C, number 109/151 (note: mainland's own print run of 151 cards, not 165 like the Taiwan/other-Asia version of this set). Cross-referenced against billsarchive.com's \"Collect 151 (CN)\" card gallery (https://billsarchive.com/collect-151-cn.html), whose hosted scan is the image_url above and was directly viewed, confirming the printed name 瓦斯弹 and card number 109/151. This confirms mainland China (launched officially Oct 28, 2022 by 宝可梦（上海）玩具有限公司) has genuine distinct Simplified Chinese TCG prints, separate from Taiwan/Hong Kong Traditional Chinese.",
+    "owned": false,
+    "owned_date": null
+  },
+  {
+    "id": "151c-weezing-110-zh-cn",
+    "species": "weezing",
+    "card_name": "双弹瓦斯",
+    "card_name_en": "Weezing",
+    "set_name": "收集啦151",
+    "set_code": "151c",
+    "card_number": "110",
+    "release_date": "2025-01-17",
+    "language": "zh-cn",
+    "edition": null,
+    "rarity": "Rare",
+    "depicted_only": false,
+    "image_url": "https://bills-archive.nyc3.cdn.digitaloceanspaces.com/cn_cards/151c/151c-p110_weezing.webp",
+    "source_note": "神奇宝贝百科 (52poke wiki) species TCG page \"双弹瓦斯（SV2a）\" (https://wiki.52poke.com/wiki/%E5%8F%8C%E5%BC%B9%E7%93%A6%E6%96%AF%EF%BC%88SV2a%EF%BC%89), raw table parsed directly to separate its side-by-side 简体中文版/繁体中文版 columns: the Simplified column gives set \"收集啦151\", release date 2025-01-17, rarity R, number 110/151, HP110. Cross-referenced against billsarchive.com's \"Collect 151 (CN)\" card gallery (https://billsarchive.com/collect-151-cn.html), whose hosted scan is the image_url above and was directly viewed, confirming the printed name 双弹瓦斯 and card number 110/151.",
+    "owned": false,
+    "owned_date": null
   }
 ]
