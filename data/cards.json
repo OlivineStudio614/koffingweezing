@@ -4225,7 +4225,7 @@
     "rarity": "Common",
     "depicted_only": false,
     "image_url": "https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV10/SV10_069.png?w=512",
-    "source_note": "Official Korean Pokémon card database image CDN (card found via web search of pokemoncard.co.kr and daldagury.com/tcg/pokemon/card/18436; set \"sv10\" = 로켓단의 영광 / Glory of Team Rocket, number 069/098 C, illus. kodama, Team Rocket \"R\" insignia visible, ability 실실 스모그, attack 새는가스). Korean release date June 20, 2025 (early shop release June 14) confirmed via Korean retailer/community coverage (e.g. namu.wiki \"로켓단의 영광\" and pokemonkorea.co.kr/SV10_tournament); matches the Japan April 18, 2025 and English May 30, 2025 dates already in this dataset for the same underlying card lineage, each released on its own regional date. Card name, number, and artwork directly viewed at the image_url above.",
+    "source_note": "Official Korean Pokémon card database image CDN (card found via web search of pokemoncard.co.kr and daldagury.com/tcg/pokemon/card/18436; set \"sv10\" = 로켓단의 영광 / Glory of Team Rocket, number 069/098 C, illus. kodama, Team Rocket \"R\" insignia visible, ability 실실 스모그, attack 새는가스). Korean release date June 20, 2025 (early shop release June 14) taken from WebSearch synthesis of namu.wiki \"로켓단의 영광\" and pokemonkorea.co.kr/SV10_tournament — namu.wiki returns HTTP 403 on direct fetch from this environment, so this date was not independently re-verified via a raw page fetch, only via the search tool's own indexed content; matches the Japan April 18, 2025 and English May 30, 2025 dates already in this dataset for the same underlying card lineage, each released on its own regional date. Card name, number, and artwork directly viewed at the image_url above.",
     "owned": false,
     "owned_date": null
   },
@@ -4243,7 +4243,7 @@
     "rarity": "Uncommon",
     "depicted_only": false,
     "image_url": "https://cards.image.pokemonkorea.co.kr/data/wmimages/SV/SV10/SV10_070.png?w=512",
-    "source_note": "Official Korean Pokémon card database image CDN (set \"sv10\" = 로켓단의 영광 / Glory of Team Rocket, number 070/098 U, HP130, illus. matazo, attack 일제폭발). Korean release date June 20, 2025 confirmed via Korean retailer/community coverage (namu.wiki \"로켓단의 영광\"). Card name, number, and artwork directly viewed at the image_url above.",
+    "source_note": "Official Korean Pokémon card database image CDN (set \"sv10\" = 로켓단의 영광 / Glory of Team Rocket, number 070/098 U, HP130, illus. matazo, attack 일제폭발). Korean release date June 20, 2025 taken from WebSearch synthesis of namu.wiki \"로켓단의 영광\" — namu.wiki returns HTTP 403 on direct fetch from this environment, so this date was not independently re-verified via a raw page fetch, only via the search tool's own indexed content; same date as the companion Koffing card (sv10-koffing-069-ko) in this dataset. Card name, number, and artwork directly viewed at the image_url above.",
     "owned": false,
     "owned_date": null
   },
