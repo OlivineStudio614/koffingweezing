@@ -31,6 +31,16 @@ body {
 
 .card p {
   font-size: 0.8rem;
+  margin: 0.2rem 0;
+}
+
+.card-label-native {
+  color: #777;
+  font-style: italic;
+}
+
+.card-status {
+  font-size: 0.75rem;
 }
 
 .card-id {

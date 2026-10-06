@@ -1,6 +1,6 @@
 export const SPECIES = ['koffing', 'weezing', 'galarian-weezing'];
 
-const REQUIRED_STRING_FIELDS = ['id', 'card_name', 'set_name', 'release_date', 'language', 'image_url'];
+const REQUIRED_STRING_FIELDS = ['id', 'card_name', 'card_name_en', 'set_name', 'release_date', 'language', 'image_url'];
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 export function validateCard(card) {

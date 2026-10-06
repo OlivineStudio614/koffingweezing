@@ -1,3 +1,10 @@
+export const LANGUAGE_DISPLAY_NAMES = {
+  en: 'English',
+  jp: 'Japanese',
+  fr: 'French',
+  de: 'German',
+};
+
 export function sortByReleaseDate(cards) {
   return [...cards].sort((a, b) => a.release_date.localeCompare(b.release_date));
 }
@@ -11,13 +18,19 @@ export function buildCardViewModel(cards) {
   const sorted = sortByReleaseDate(cards);
   const nextUpId = getNextUnowned(sorted)?.id ?? null;
 
-  return sorted.map(card => ({
-    id: card.id,
-    label: `${card.card_name} — ${card.set_name} (${card.language}${card.edition ? ', ' + card.edition : ''})`,
-    imageUrl: card.image_url,
-    releaseDate: card.release_date,
-    owned: card.owned,
-    ownedDate: card.owned_date,
-    isNextUp: card.id === nextUpId,
-  }));
+  return sorted.map(card => {
+    const languageDisplayName = LANGUAGE_DISPLAY_NAMES[card.language] ?? card.language;
+    const showNative = card.language !== 'en' || card.card_name !== card.card_name_en;
+
+    return {
+      id: card.id,
+      labelEn: `${card.card_name_en} — ${card.set_name} — ${languageDisplayName} — #${card.card_number}`,
+      labelNative: showNative ? card.card_name : null,
+      imageUrl: card.image_url,
+      releaseDate: card.release_date,
+      owned: card.owned,
+      ownedDate: card.owned_date,
+      isNextUp: card.id === nextUpId,
+    };
+  });
 }

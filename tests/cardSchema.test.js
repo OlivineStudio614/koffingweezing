@@ -7,6 +7,7 @@ const validCard = {
   id: 'base1-koffing-48-1stEd-en',
   species: 'koffing',
   card_name: 'Koffing',
+  card_name_en: 'Koffing',
   set_name: 'Base Set',
   release_date: '1999-01-09',
   language: 'en',

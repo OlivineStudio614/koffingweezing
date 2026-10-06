@@ -27,18 +27,33 @@ function render(viewModels) {
 
     const img = document.createElement('img');
     img.src = vm.imageUrl;
-    img.alt = vm.label;
+    img.alt = vm.labelEn;
     img.loading = 'lazy';
     img.decoding = 'async';
     el.appendChild(img);
 
-    const caption = document.createElement('p');
-    caption.textContent = vm.owned
-      ? `${vm.label} — collected ${vm.ownedDate}`
+    const captionEn = document.createElement('p');
+    captionEn.className = 'card-label-en';
+    captionEn.textContent = vm.labelEn;
+    el.appendChild(captionEn);
+
+    if (vm.labelNative) {
+      const captionNative = document.createElement('p');
+      captionNative.className = 'card-label-native';
+      captionNative.textContent = vm.labelNative;
+      el.appendChild(captionNative);
+    }
+
+    const status = document.createElement('p');
+    status.className = 'card-status';
+    status.textContent = vm.owned
+      ? `collected ${vm.ownedDate}`
       : vm.isNextUp
-        ? `${vm.label} — next up!`
-        : vm.label;
-    el.appendChild(caption);
+        ? 'next up!'
+        : '';
+    if (status.textContent) {
+      el.appendChild(status);
+    }
 
     const idLine = document.createElement('code');
     idLine.className = 'card-id';
