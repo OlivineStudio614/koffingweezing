@@ -1,0 +1,19 @@
+[
+  {
+    "id": "base1-koffing-48-1stEd-en",
+    "species": "koffing",
+    "card_name": "Koffing",
+    "set_name": "Base Set",
+    "set_code": "base1",
+    "card_number": "48",
+    "release_date": "1999-01-09",
+    "language": "en",
+    "edition": "1st-edition",
+    "rarity": "common",
+    "depicted_only": false,
+    "image_url": "https://images.pokemontcg.io/base1/48_hires.png",
+    "source_note": "Physically owned, Pokemon Center binder",
+    "owned": true,
+    "owned_date": "2026-09-01"
+  }
+]
