@@ -3449,5 +3449,39 @@
     "source_note": "PokéWiki: Ewige Rivalen (TCG) (German equivalent of Destined Rivals), German release 30. Mai 2025, same day as English (https://www.pokewiki.de/Ewige_Rivalen_(TCG)), confirms \"199/182 Team Rockets Smogmog\" (Illustration Rare). Image verified on the official Pokémon.com German card database.",
     "owned": false,
     "owned_date": null
+  },
+  {
+    "id": "base5-koffing-76-depicted-en",
+    "species": "koffing",
+    "card_name": "Imposter Oak's Revenge",
+    "set_name": "Team Rocket",
+    "set_code": "base5",
+    "card_number": "76",
+    "release_date": "2000-04-24",
+    "language": "en",
+    "edition": null,
+    "rarity": "Uncommon",
+    "depicted_only": true,
+    "image_url": "https://images.pokemontcg.io/base5/76_hires.png",
+    "source_note": "Depicted in the background artwork of \"Imposter Oak's Revenge\" (Team Rocket 76/82, illus. Ken Sugimori), a Trainer card whose own subject is the Imposter Professor Oak character — Koffing is visibly illustrated beside him alongside a Gengar. Identified via The Art of Pokémon's Koffing \"Secondary Cards\" listing (https://www.artofpkm.com/pokemon/koffing/secondary_cards, card page https://www.artofpkm.com/sets/10/card/55) and visually confirmed in the card scan; card details cross-checked on Bulbapedia (https://bulbapedia.bulbagarden.net/wiki/Imposter_Oak%27s_Revenge_(Team_Rocket_76)). Release date matches English Team Rocket set release already used elsewhere in this dataset.",
+    "owned": false,
+    "owned_date": null
+  },
+  {
+    "id": "gym2-weezing-125-depicted-en",
+    "species": "weezing",
+    "card_name": "Transparent Walls",
+    "set_name": "Gym Challenge",
+    "set_code": "gym2",
+    "card_number": "125",
+    "release_date": "2000-10-16",
+    "language": "en",
+    "edition": null,
+    "rarity": "Common",
+    "depicted_only": true,
+    "image_url": "https://images.pokemontcg.io/gym2/125_hires.png",
+    "source_note": "Depicted in the artwork of \"Transparent Walls\" (Gym Challenge 125/132, Japanese \"Invisible Wall\", illus. Keiji Kinebuchi), a Trainer card whose own subject is the invisible-wall maze mechanic of Koga/Janine's Fuchsia Gym — Weezing is clearly illustrated passing through the transparent green walls. Identified via The Art of Pokémon's Weezing \"Secondary Cards\" listing (https://www.artofpkm.com/pokemon/weezing/secondary_cards, card page https://www.artofpkm.com/sets/25/card/89) and visually confirmed in the card scan; card details cross-checked on Bulbapedia (https://bulbapedia.bulbagarden.net/wiki/Transparent_Walls_(Gym_Challenge_125)), whose Origin section notes the card references the transparent-wall maze of Koga/Janine's Fuchsia Gym. Release date matches English Gym Challenge set release already used elsewhere in this dataset.",
+    "owned": false,
+    "owned_date": null
   }
 ]
