@@ -32,3 +32,10 @@ body {
 .card p {
   font-size: 0.8rem;
 }
+
+.card-id {
+  display: block;
+  font-family: monospace;
+  font-size: 0.7rem;
+  color: #777;
+}
