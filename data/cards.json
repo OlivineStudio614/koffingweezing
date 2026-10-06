@@ -13,9 +13,9 @@
     "rarity": "common",
     "depicted_only": false,
     "image_url": "https://images.pokemontcg.io/base1/51_hires.png",
-    "source_note": "Physically owned, Pokemon Center binder",
-    "owned": true,
-    "owned_date": "2026-09-01"
+    "source_note": "pokemontcg.io API — edition variant (1st/unlimited/shadowless) not distinguished by the API; verify manually",
+    "owned": false,
+    "owned_date": null
   },
   {
     "id": "sm115-koffing-28-en",
@@ -81,13 +81,13 @@
     "card_number": "51",
     "release_date": "1999-01-09",
     "language": "en",
-    "edition": null,
+    "edition": "unlimited",
     "rarity": "Common",
     "depicted_only": false,
     "image_url": "https://images.pokemontcg.io/base1/51_hires.png",
-    "source_note": "pokemontcg.io API — edition variant (1st/unlimited/shadowless) not distinguished by the API; verify manually",
-    "owned": false,
-    "owned_date": null
+    "source_note": "Physically owned, Pokemon Center binder — standard Unlimited print (has the drop-shadow around the artwork box), confirmed by owner",
+    "owned": true,
+    "owned_date": "2026-09-01"
   },
   {
     "id": "xy12-koffing-50-en",
