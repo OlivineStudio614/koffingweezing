@@ -4,11 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Koffing / Weezing Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Koffing / Weezing Collection</h1>
+  <header id="kw-timer">
+    <img class="kw-mascot kw-mascot-koffing" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png" alt="Koffing" width="96" height="96" loading="eager" decoding="async">
+    <div class="kw-timer-center">
+      <h1>Koffing / Weezing Collection</h1>
+      <p class="kw-timer-caption">elapsed</p>
+      <p id="kw-timer-readout">0:00:00:00.000</p>
+    </div>
+    <img class="kw-mascot kw-mascot-weezing" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png" alt="Weezing" width="96" height="96" loading="eager" decoding="async">
+  </header>
+
   <div id="card-grid">Loading…</div>
+
+  <footer id="kw-footer">
+    <p>&copy; 2026 Olivine Studio 614</p>
+  </footer>
+
   <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/timerInit.js"></script>
 </body>
 </html>
