@@ -12,6 +12,17 @@ export function getNextUnowned(cards) {
   return sorted.find(c => !c.owned) ?? null;
 }
 
+export function buildCollectionStats(cards) {
+  const total = cards.length;
+  const owned = cards.filter(c => c.owned).length;
+  const percent = total === 0 ? 0 : (owned / total) * 100;
+  return { owned, total, percent };
+}
+
+export function formatCollectionStatsText({ owned, total, percent }) {
+  return `${owned} / ${total} collected (${Number(percent.toFixed(1))}%)`;
+}
+
 export function buildCardViewModel(cards) {
   const sorted = sortByReleaseDate(cards);
   const nextUpId = getNextUnowned(sorted)?.id ?? null;

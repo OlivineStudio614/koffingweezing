@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { sortByReleaseDate, getNextUnowned, buildCardViewModel } from '../js/cards.js';
+import { sortByReleaseDate, getNextUnowned, buildCardViewModel, buildCollectionStats, formatCollectionStatsText } from '../js/cards.js';
 
 const cardA = { id: 'a', card_name: 'Koffing', card_name_en: 'Koffing', set_name: 'Base Set', card_number: '51', language: 'en', edition: '1st-edition', release_date: '1999-01-09', image_url: 'a.png', owned: true, owned_date: '2026-09-01' };
 const cardB = { id: 'b', card_name: 'Weezing', card_name_en: 'Weezing', set_name: 'Jungle', card_number: '36', language: 'en', edition: null, release_date: '1999-06-16', image_url: 'b.png', owned: false, owned_date: null };
@@ -46,4 +46,23 @@ test('buildCardViewModel sets labelNative for non-English cards', () => {
 test('buildCardViewModel includes an eBay search URL for each card', () => {
   const vms = buildCardViewModel([cardA]);
   assert.equal(vms[0].ebayUrl, 'https://www.ebay.com/sch/i.html?_nkw=Koffing%20Base%20Set%20%2351%201st%20Edition');
+});
+
+test('buildCollectionStats counts owned vs total and computes a percentage', () => {
+  const stats = buildCollectionStats([cardA, cardB, cardC]);
+  assert.equal(stats.owned, 1);
+  assert.equal(stats.total, 3);
+  assert.ok(Math.abs(stats.percent - 100 / 3) < 1e-9);
+});
+
+test('buildCollectionStats handles an empty collection without dividing by zero', () => {
+  assert.deepEqual(buildCollectionStats([]), { owned: 0, total: 0, percent: 0 });
+});
+
+test('formatCollectionStatsText renders "owned / total collected (percent%)"', () => {
+  assert.equal(formatCollectionStatsText({ owned: 1, total: 341, percent: 100 / 341 }), '1 / 341 collected (0.3%)');
+});
+
+test('formatCollectionStatsText drops a trailing .0 on the percentage', () => {
+  assert.equal(formatCollectionStatsText({ owned: 2, total: 2, percent: 100 }), '2 / 2 collected (100%)');
 });

@@ -1,5 +1,5 @@
 // js/app.js
-import { buildCardViewModel } from './cards.js';
+import { buildCardViewModel, buildCollectionStats, formatCollectionStatsText } from './cards.js';
 
 async function init() {
   try {
@@ -8,12 +8,18 @@ async function init() {
       throw new Error(`Failed to fetch data/cards.json: ${response.status} ${response.statusText}`);
     }
     const cards = await response.json();
+    renderStats(buildCollectionStats(cards));
     render(buildCardViewModel(cards));
   } catch (err) {
     console.error(err);
     const container = document.getElementById('card-grid');
     container.textContent = 'Could not load card data — please try again.';
   }
+}
+
+function renderStats(stats) {
+  document.getElementById('kw-stats-text').textContent = formatCollectionStatsText(stats);
+  document.getElementById('kw-stats-bar-fill').style.width = `${stats.percent}%`;
 }
 
 function render(viewModels) {

@@ -204,6 +204,27 @@ h1 {
   color: #6c2a8c;
 }
 
+#kw-stats-text {
+  margin-top: 0.9rem;
+}
+
+#kw-stats-bar {
+  width: min(220px, 60vw);
+  height: 5px;
+  margin: 0.35rem auto 0;
+  border-radius: 3px;
+  background: rgba(108, 42, 140, 0.12);
+  overflow: hidden;
+}
+
+#kw-stats-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #6c2a8c, #78b46e);
+  transition: width 0.4s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   #kw-timer::before,
   #kw-timer::after {
