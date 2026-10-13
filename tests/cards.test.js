@@ -42,3 +42,8 @@ test('buildCardViewModel sets labelNative for non-English cards', () => {
   assert.equal(vms[0].labelEn, 'Koffing — Expansion Pack — Japanese — #006');
   assert.equal(vms[0].labelNative, 'ドガース');
 });
+
+test('buildCardViewModel includes an eBay search URL for each card', () => {
+  const vms = buildCardViewModel([cardA]);
+  assert.equal(vms[0].ebayUrl, 'https://www.ebay.com/sch/i.html?_nkw=Koffing%20Base%20Set%20%2351%201st%20Edition');
+});

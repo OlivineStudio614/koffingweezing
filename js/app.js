@@ -21,9 +21,12 @@ function render(viewModels) {
   container.innerHTML = '';
 
   for (const vm of viewModels) {
-    const el = document.createElement('div');
+    const el = document.createElement('a');
     el.className = `card ${vm.owned ? 'owned' : 'unowned'}${vm.isNextUp ? ' next-up' : ''}`;
     el.dataset.id = vm.id;
+    el.href = vm.ebayUrl;
+    el.target = '_blank';
+    el.rel = 'noopener noreferrer';
 
     const img = document.createElement('img');
     img.src = vm.imageUrl;
